@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Users/rino0/AndroidStudioProjects/Sudoku/app/src/main/res/drawable/ic_icons8_circled_play.xml" value="0.1" />
+        <entry key="..\:/Users/rino0/AndroidStudioProjects/Sudoku/app/src/main/res/drawable/ic_icons8_close.xml" value="0.1" />
+        <entry key="..\:/Users/rino0/AndroidStudioProjects/Sudoku/app/src/main/res/drawable/ic_icons8_erase.xml" value="0.1" />
+        <entry key="..\:/Users/rino0/AndroidStudioProjects/Sudoku/app/src/main/res/drawable/ic_icons8_leaderboard.xml" value="0.1" />
+        <entry key="..\:/Users/rino0/AndroidStudioProjects/Sudoku/app/src/main/res/drawable/ic_icons8_light_on.xml" value="0.1" />
+        <entry key="..\:/Users/rino0/AndroidStudioProjects/Sudoku/app/src/main/res/drawable/ic_icons8_logout.xml" value="0.1" />
+        <entry key="..\:/Users/rino0/AndroidStudioProjects/Sudoku/app/src/main/res/drawable/ic_icons8_medal.xml" value="0.1" />
+        <entry key="..\:/Users/rino0/AndroidStudioProjects/Sudoku/app/src/main/res/drawable/ic_icons8_memories.xml" value="0.1" />
+        <entry key="..\:/Users/rino0/AndroidStudioProjects/Sudoku/app/src/main/res/drawable/ic_icons8_services.xml" value="0.1" />
+        <entry key="..\:/Users/rino0/AndroidStudioProjects/Sudoku/app/src/main/res/layout/activity_main.xml" value="0.165625" />
+        <entry key="..\:/Users/rino0/AndroidStudioProjects/Sudoku/app/src/main/res/layout/fragment_fullscreen.xml" value="0.1796875" />
+        <entry key="..\:/Users/rino0/AndroidStudioProjects/Sudoku/app/src/main/res/layout/game_fragment.xml" value="0.1" />
+        <entry key="..\:/Users/rino0/Desktop/2/sudoku/app/src/main/res/drawable/ic_leaderboard.xml" value="0.1" />
+        <entry key="..\:/Users/rino0/Desktop/2/sudoku/app/src/main/res/font/fonts.xml" value="0.1" />
+        <entry key="..\:/Users/rino0/Desktop/2/sudoku/app/src/main/res/layout/activity_main.xml" value="0.1796875" />
+        <entry key="..\:/Users/rino0/Desktop/2/sudoku/app/src/main/res/layout/fragment_fullscreen.xml" value="0.1796875" />
+        <entry key="..\:/Users/rino0/Desktop/2/sudoku/app/src/main/res/layout/settings_fragment.xml" value="0.1796875" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>

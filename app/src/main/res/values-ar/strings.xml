@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Sudoku</string>
+    <string name="continueBtn">لعبة سابقة</string>
+    <string name="new_game">لعبة جديدة</string>
+    <string name="settings">الإعدادات</string>
+    <string name="language">اللغة</string>
+    <string name="english">الأنجليزية</string>
+    <string name="arabic">العربية</string>
+    <string name="colors_mode">وضع الألوان</string>
+    <string name="light">فاتح</string>
+    <string name="dark">داكن</string>
+    <string name="contact_us">تواصل معنا</string>
+
+    <string-array name="levelArray">
+        <item>سهل</item>
+        <item>متوسط</item>
+        <item>صعب</item>
+    </string-array>
+</resources>
