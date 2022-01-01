@@ -1,0 +1,242 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".ui.main_activity.fragments.game_fragment.GameFragment"
+    android:background="@color/colorOnPrimary">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+<!--        <ImageButton-->
+<!--            android:id="@+id/hintBtn"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:backgroundTint="#00000000"-->
+<!--            android:src="@drawable/ic_light_on"-->
+<!--            app:layout_constraintStart_toStartOf="parent"-->
+<!--            app:layout_constraintTop_toTopOf="parent" />-->
+
+
+<!--        <ImageButton-->
+<!--            android:id="@+id/CoinsCounter"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:backgroundTint="#00000000"-->
+<!--            android:src="@drawable/ic_coins"-->
+<!--            app:layout_constraintEnd_toEndOf="parent"-->
+<!--            app:layout_constraintTop_toTopOf="parent" />-->
+
+        <LinearLayout
+            android:id="@+id/linearLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <TextView
+                android:id="@+id/timerText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginBottom="17dp"
+                android:fontFamily="@font/bubblegum_sans"
+                android:padding="5dp"
+                android:textColor="@color/colorOnSecondary"
+                android:textSize="20sp" />
+
+            <com.renad.sudoku.ui.main_activity.fragments.game_fragment.custom_view.SudokuBoardView
+                android:id="@+id/sudokuBoardView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:orientation="horizontal">
+
+                <GridLayout
+                    android:id="@+id/buttonsLayout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:columnCount="3"
+                    android:rowCount="3">
+
+
+                    <com.google.android.material.button.MaterialButton
+                        android:id="@+id/oneBtn"
+                        android:layout_width="50dp"
+                        android:layout_height="60dp"
+                        android:layout_row="0"
+                        android:layout_column="0"
+                        android:layout_margin="3dp"
+                        android:fontFamily="@font/bubblegum_sans"
+                        android:text="1"
+                        android:textColor="@color/colorOnSecondary"
+                        android:textSize="20sp"
+                        app:cornerRadius="50dp" />
+
+                    <Button
+                        android:id="@+id/twoBtn"
+                        android:layout_width="50dp"
+                        android:layout_height="60dp"
+                        android:layout_row="0"
+                        android:layout_column="1"
+                        android:layout_margin="3dp"
+                        android:fontFamily="@font/bubblegum_sans"
+                        android:text="2"
+                        android:textColor="@color/colorOnSecondary"
+                        android:textSize="20sp"
+                        app:cornerRadius="50dp" />
+
+                    <Button
+                        android:id="@+id/threeBtn"
+                        android:layout_width="50dp"
+                        android:layout_height="60dp"
+                        android:layout_row="0"
+                        android:layout_column="2"
+                        android:layout_margin="3dp"
+                        android:fontFamily="@font/bubblegum_sans"
+                        android:text="3"
+                        android:textColor="@color/colorOnSecondary"
+                        android:textSize="20sp"
+                        app:cornerRadius="50dp" />
+
+                    <Button
+                        android:id="@+id/fourBtn"
+                        android:layout_width="50dp"
+                        android:layout_height="60dp"
+                        android:layout_row="1"
+                        android:layout_column="0"
+                        android:layout_margin="3dp"
+                        android:fontFamily="@font/bubblegum_sans"
+                        android:text="4"
+                        android:textColor="@color/colorOnSecondary"
+                        android:textSize="20sp"
+                        app:cornerRadius="50dp" />
+
+                    <Button
+                        android:id="@+id/fiveBtn"
+                        android:layout_width="50dp"
+                        android:layout_height="60dp"
+                        android:layout_row="1"
+                        android:layout_column="1"
+                        android:layout_margin="3dp"
+                        android:fontFamily="@font/bubblegum_sans"
+                        android:text="5"
+                        android:textColor="@color/colorOnSecondary"
+                        android:textSize="20sp"
+                        app:cornerRadius="50dp" />
+
+                    <Button
+                        android:id="@+id/sixBtn"
+                        android:layout_width="50dp"
+                        android:layout_height="60dp"
+                        android:layout_row="1"
+                        android:layout_column="2"
+                        android:layout_margin="3dp"
+                        android:fontFamily="@font/bubblegum_sans"
+                        android:text="6"
+                        android:textColor="@color/colorOnSecondary"
+                        android:textSize="20sp"
+                        app:cornerRadius="50dp" />
+
+                    <Button
+                        android:id="@+id/sevenBtn"
+                        android:layout_width="50dp"
+                        android:layout_height="60dp"
+                        android:layout_row="2"
+                        android:layout_column="0"
+                        android:layout_margin="3dp"
+                        android:fontFamily="@font/bubblegum_sans"
+                        android:text="7"
+                        android:textColor="@color/colorOnSecondary"
+                        android:textSize="20sp"
+                        app:cornerRadius="50dp" />
+
+                    <Button
+                        android:id="@+id/eightBtn"
+                        android:layout_width="50dp"
+                        android:layout_height="60dp"
+                        android:layout_row="2"
+                        android:layout_column="1"
+                        android:layout_margin="3dp"
+                        android:fontFamily="@font/bubblegum_sans"
+                        android:text="8"
+                        android:textColor="@color/colorOnSecondary"
+                        android:textSize="20sp"
+                        app:cornerRadius="50dp" />
+
+                    <Button
+                        android:id="@+id/nineBtn"
+                        android:layout_width="50dp"
+                        android:layout_height="60dp"
+                        android:layout_row="2"
+                        android:layout_column="2"
+                        android:layout_margin="3dp"
+                        android:fontFamily="@font/bubblegum_sans"
+                        android:text="9"
+                        android:textColor="@color/colorOnSecondary"
+                        android:textSize="20sp"
+                        app:cornerRadius="50dp" />
+                </GridLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:orientation="vertical">
+
+                    <ImageButton
+                        android:id="@+id/eraseBtn"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:backgroundTint="#00000000"
+                        android:clickable="true"
+                        android:src="@drawable/ic_erase" />
+
+                    <ImageButton
+                        android:id="@+id/undoBtn"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:backgroundTint="#00000000"
+                        android:clickable="true"
+                        android:src="@drawable/ic_undo" />
+
+                    <ImageButton
+                        android:id="@+id/stopBtn"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:backgroundTint="#00000000"
+                        android:clickable="true"
+                        android:src="@drawable/ic_pause" />
+
+                    <ImageButton
+                        android:id="@+id/resetBtn"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:backgroundTint="#00000000"
+                        android:clickable="true"
+                        android:src="@drawable/ic_reset" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+        <ImageButton
+            android:id="@+id/logoutBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#00000000"
+            android:src="@drawable/ic_logout"
+            android:rotationY="180"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>
