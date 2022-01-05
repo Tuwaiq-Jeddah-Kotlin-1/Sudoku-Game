@@ -6,13 +6,20 @@ import android.content.res.Configuration
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatDelegate
+import androidx.work.ExistingPeriodicWorkPolicy
+import androidx.work.PeriodicWorkRequest
+import androidx.work.WorkManager
 import com.renad.sudoku.R
 import java.util.*
+import java.util.concurrent.TimeUnit
 
 class MainActivity : AppCompatActivity() {
+
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
+
         val sharedPref = getSharedPreferences("SharedPreferences", Context.MODE_PRIVATE)
 
         //check the dark mood user option
@@ -37,5 +44,18 @@ class MainActivity : AppCompatActivity() {
         config.setLocale(locale)
         resources.updateConfiguration(config, resources.displayMetrics)
 
+    }
+
+    //notification
+        private fun notification() {
+        val periodicWorker = PeriodicWorkRequest.Builder(
+            NotificationWorker::class.java, 20, TimeUnit.MINUTES//minimum 15 min
+        ).build()//mad worker with periodic time repeat
+
+        WorkManager.getInstance(this).enqueueUniquePeriodicWork(
+            "periodicNotification",
+            ExistingPeriodicWorkPolicy.KEEP,
+            periodicWorker
+        )//unique work
     }
 }
