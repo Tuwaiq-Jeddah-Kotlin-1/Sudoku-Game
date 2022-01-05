@@ -67,6 +67,5 @@ class GameFragment : Fragment(), SudokuBoardView.OnTouchListener {
     }
 
     override fun onCellTouched(row: Int, col: Int) {
-        TODO("Not yet implemented")
     }
 }
