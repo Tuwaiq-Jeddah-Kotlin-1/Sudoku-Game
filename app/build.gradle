@@ -1,7 +1,9 @@
 plugins {
     id 'com.android.application'
+    id 'kotlin-android-extensions'
     id 'kotlin-android'
     id 'kotlin-kapt'
+    id 'com.google.gms.google-services'
 }
 
 android {
@@ -9,7 +11,7 @@ android {
 
     defaultConfig {
         applicationId "com.renad.sudoku"
-        minSdk 25
+        minSdk 29
         targetSdk 31
         versionCode 1
         versionName "1.0"
@@ -33,10 +35,12 @@ android {
     buildFeatures {
         viewBinding true
     }
-    dataBinding{
+    dataBinding {
         enabled = true
     }
 }
+
+
 
 dependencies {
 
@@ -81,17 +85,16 @@ dependencies {
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.4.0'
 
     //preference
-    implementation"androidx.preference:preference-ktx:1.1.1"
+    implementation "androidx.preference:preference-ktx:1.1.1"
 
     //firebase
-        // Import the BoM for the Firebase platform
-        implementation platform('com.google.firebase:firebase-bom:29.0.3')
+    // Import the BoM for the Firebase platform
+    implementation platform('com.google.firebase:firebase-bom:29.0.3')
+    implementation 'com.google.firebase:firebase-analytics-ktx'
+    // Authentication library
+    implementation 'com.google.firebase:firebase-auth-ktx'
+    // Google Play services
+    implementation 'com.google.android.gms:play-services-auth:20.0.0'
 
-        // Declare the dependency for the Firebase Authentication library
-        // When using the BoM, you don't specify versions in Firebase library dependencies
-        implementation 'com.google.firebase:firebase-auth-ktx'
-
-        // Also declare the dependency for the Google Play services library and specify its version
-        implementation 'com.google.android.gms:play-services-auth:19.2.0'
 
 }

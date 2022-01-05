@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "178328599712",
+    "project_id": "sudoku-game-406ed",
+    "storage_bucket": "sudoku-game-406ed.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:178328599712:android:bc0ddf200921509e2eddc5",
+        "android_client_info": {
+          "package_name": "com.renad.sudoku"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "178328599712-nj0qedpgme31ok0ievg5lqgjgh3niffp.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBpj-prSklYKf1ThlwlE7J6Zerg3eJ7rng"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "178328599712-gmoto5dsrk9jg3b62tfv5ebppji7ggoo.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
