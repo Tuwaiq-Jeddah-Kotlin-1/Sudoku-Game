@@ -10,6 +10,9 @@
     <string name="light">Light</string>
     <string name="dark">Dark</string>
     <string name="contact_us">Contact Us</string>
+    <string name="sign_in">Sign In</string>
+    <string name="log_out">log Out</string>
+    <string name="linked_google_account">Linked Google Account</string>
 
     <string-array name="levelArray">
         <item>Easy</item>

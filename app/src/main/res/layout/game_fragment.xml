@@ -195,23 +195,23 @@
 
                     <ImageButton
                         android:id="@+id/eraseBtn"
-                        android:layout_width="40dp"
-                        android:layout_height="40dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="47dp"
                         android:backgroundTint="#00000000"
                         android:clickable="true"
                         android:src="@drawable/ic_erase" />
 
                     <ImageButton
                         android:id="@+id/undoBtn"
-                        android:layout_width="40dp"
-                        android:layout_height="40dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="45dp"
                         android:backgroundTint="#00000000"
                         android:clickable="true"
                         android:src="@drawable/ic_undo" />
 
                     <ImageButton
                         android:id="@+id/stopBtn"
-                        android:layout_width="40dp"
+                        android:layout_width="match_parent"
                         android:layout_height="40dp"
                         android:backgroundTint="#00000000"
                         android:clickable="true"
@@ -219,10 +219,11 @@
 
                     <ImageButton
                         android:id="@+id/resetBtn"
-                        android:layout_width="40dp"
-                        android:layout_height="40dp"
+                        android:layout_width="50dp"
+                        android:layout_height="48dp"
                         android:backgroundTint="#00000000"
                         android:clickable="true"
+                        android:padding="10dp"
                         android:src="@drawable/ic_reset" />
                 </LinearLayout>
             </LinearLayout>

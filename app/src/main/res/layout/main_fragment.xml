@@ -37,7 +37,7 @@
             android:backgroundTint="#00000000"
             android:src="@drawable/ic_settings"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/leaderboardBtn"/>
+            app:layout_constraintTop_toBottomOf="@id/leaderboardBtn" />
 
         <ImageButton
             android:id="@+id/questionMarkBtn"
@@ -46,7 +46,7 @@
             android:backgroundTint="#00000000"
             android:src="@drawable/ic_question_mark"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/settingsBtn"/>
+            app:layout_constraintTop_toBottomOf="@id/settingsBtn" />
 
 
         <LinearLayout
@@ -108,27 +108,19 @@
 
             </androidx.constraintlayout.widget.ConstraintLayout>
 
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="vertical">
 
-                <FrameLayout
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="2dp"
+                android:layout_gravity="center">
+
+                <LinearLayout
+                    android:id="@+id/linearLayout2"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_gravity="center">
-
-                    <TextView
-                        android:id="@+id/playBtnText"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_gravity="center_vertical"
-                        android:layout_marginLeft="70dp"
-                        android:fontFamily="@font/bubblegum_sans"
-                        android:padding="5dp"
-                        android:text="@string/new_game"
-                        android:textColor="@color/pink"
-                        android:textSize="18sp" />
+                    android:layout_gravity="center"
+                    android:orientation="vertical">
 
                     <ImageButton
                         android:id="@+id/playBtn"
@@ -138,25 +130,6 @@
                         android:backgroundTint="#00000000"
                         android:src="@drawable/ic_play_button" />
 
-                </FrameLayout>
-
-                <FrameLayout
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center">
-
-                    <TextView
-                        android:id="@+id/continueBtnText"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_gravity="center_vertical"
-                        android:layout_marginLeft="74dp"
-                        android:fontFamily="@font/bubblegum_sans"
-                        android:paddingLeft="10dp"
-                        android:text="@string/continueBtn"
-                        android:textColor="@color/blue"
-                        android:textSize="18sp" />
-
                     <ImageButton
                         android:id="@+id/continueBtn"
                         android:layout_width="wrap_content"
@@ -164,8 +137,43 @@
                         android:layout_gravity="center"
                         android:backgroundTint="#00000000"
                         android:src="@drawable/ic_continue_button" />
-                </FrameLayout>
-            </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/signInBtnFrame"
+                    android:layout_width="90dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="68dp"
+                    android:layout_marginRight="18dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/playBtnText"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:fontFamily="@font/bubblegum_sans"
+                        android:paddingTop="26dp"
+                        android:paddingBottom="26dp"
+                        android:text="@string/new_game"
+                        android:textColor="@color/pink"
+                        android:textSize="18sp" />
+
+                    <TextView
+                        android:id="@+id/continueBtnText"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:fontFamily="@font/bubblegum_sans"
+                        android:paddingTop="26dp"
+                        android:paddingBottom="26dp"
+                        android:text="@string/continueBtn"
+                        android:textColor="@color/blue"
+                        android:textSize="18sp" />
+
+                </LinearLayout>
+
+            </FrameLayout>
 
         </LinearLayout>
 

@@ -11,6 +11,10 @@
     <string name="light">فاتح</string>
     <string name="dark">داكن</string>
     <string name="contact_us">تواصل معنا</string>
+    <string name="sign_in">تسجيل الدخول</string>
+    <string name="log_out">تسجيل الخروج</string>
+    <string name="linked_google_account">ربط حساب Google</string>
+
 
     <string-array name="levelArray">
         <item>سهل</item>
